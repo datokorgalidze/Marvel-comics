@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #161313;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.char__info,
+.char__search-form {
+  background: #161313;
+}
+
+.char__comics,
+.char__comics-list,
+.char__descr,
+.app__banner,
+.comics__item-price,
+.char__search-label,
+main {
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .app__header {
+    max-width: 800px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+  }
+
+  .app .bg-decoration {
+    right: 320px;
+    bottom: -350px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+  .randomchar {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    gap: 10px;
+  }
+
+  .randomchar__decoration {
+    right: 100px;
+  }
+  .randomchar__title {
+    font-size: 20px;
+  }
+  .comics__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+  }
+
+  .comics__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-right: 15px;
+  }
+  .char__btns {
+    display: flex;
+    gap: 10px;
+  }
+  .char__basics {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .char__comics-list {
+    max-width: 250px;
+  }
+  .app__banner {
+    padding-right: 100px;
+    max-width: 800px;
+  }
+  .char__info {
+    width: 100%;
+  }
+  .char__search-form {
+    margin-bottom: 40px;
+  }
+  .char__content {
+    flex-direction: column-reverse;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
